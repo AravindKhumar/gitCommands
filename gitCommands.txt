@@ -114,4 +114,16 @@ git revert <hash>
 DIFFERENCE BETWEEN TWO COMMITS
 git diff <hash 1> <hash 2>
 
-
+GIT STASHING
+Changes that are not ready to commit, But there should be movement between the branches, temporarily save the changes...
+git stash save "Message for stashing"
+git stash list - gives the list of all stashes you have made
+After completing all the Intermediate works, 
+git stash apply <stash name>
+Even after applying the stash will still be present...
+Instead off "Applying" the stash
+git stash pop - will aplly the first stash and delete it from the list
+To drop the stashes...
+git stash drop <stash name>
+To drop all the stashes...
+git stash clear
