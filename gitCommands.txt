@@ -1,0 +1,44 @@
+git -- version
+
+git config --global user.name ' '
+git config --global user.email ' '
+git config --list
+
+git help <verb>
+git <verb> --help
+
+git init
+git status
+
+.gitignore - add the files names in this file to ignore them during commit
+
+git add -A ; git add . - Add the files to the staging area ready to be committed
+git add <file name>
+
+git reset <file name>
+git reset . - Remove the files from the staging ares
+
+git commit -m '<Commit Comments>'
+git commit -am '<Commit Comments>'
+git log - Dsiplays the information about the last commit
+
+git clone <url> <where to clone> - git clone https://www.github.com/nenivaqxuhzne/HomeAutomation .
+
+git remote -v - lists the info about the remote repository
+git branch -a - lists all the branches of the repository
+
+PUSHING CHANGES TO THE REPOSITORY:
+Make changes to the file
+git diff  - displays the changes done to the file
+git status
+git add -A
+git status
+git commit -m 'Comments for the commit'
+
+
+IF THE CHANGES TO BE MADE TO THE REMOTE REPO COPY:
+
+git pull origin master - take changes to the current code base
+git push origin master make changes to the code base in remote server
+
+BRANCHING:
