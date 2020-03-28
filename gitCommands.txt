@@ -63,6 +63,21 @@ git branch --merged - displays what all branches have been merged recently with 
 git merge <branch name>
 
 DELETE A BRANCH AFTER MERGING WITH THE MASTER:
-git branch -d <branch name>
+git branch -d <branch na me>
 git push origin --delete <branch name>
+
+UNDO THE CHANGES MADE TO THE CODE BASE BEFORE STAGING/COMITTING (JUST SAVED)
+git checkout <filename>
+
+UNDO A BAD COMMIT COMMENT
+git commit -amend -m '<Changed Comment>'
+
+FORGOT TO ADD A FILE IN THE LAST COMMIT/MAKE CHANGES USING THE LAST COMMIT:
+First stage the files that were left out in the previous commit
+git commit -ammend
+If needed make changes to the commit message and save and close the editor
+
+
+
+
 
