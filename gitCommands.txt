@@ -96,7 +96,22 @@ git reset -hard <hash> - will completely delete the tracked changes and reset as
 GET RID OF UNTRACKED CHANGES:
 git clean -df   -d - untracked directories
 		-f - untracked files
- 
 
+RECYCLING THE HARD RESET CHANGES:
+git reflog - walkthough of all the git commands we had done
+Take the hash before the changes was made and check it out
+git checkout <hash>
+git branch <branch name>
+Now the detached Head will get saved at the newly created branch
+Now if I checkout to master branch. The detached head branch will be garbaged and the
+newly created branch will have all the lost changes...
+
+REVERT THE BAD COMMIT
+Creates a new commit to undo the changes of the branch that other people have already
+pulled without affecting the history of the git...
+git revert <hash>
+
+DIFFERENCE BETWEEN TWO COMMITS
+git diff <hash 1> <hash 2>
 
 
