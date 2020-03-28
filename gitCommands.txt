@@ -77,7 +77,26 @@ First stage the files that were left out in the previous commit
 git commit -ammend
 If needed make changes to the commit message and save and close the editor
 
+IF THE COMMIT IS MADE IN THE WRONG BRANCH
+First take the hash of the last commit made wrongly...
+git log
+Then get into the branch that the commit was to be made and do the following...
+git checkout <branch name>
+git cherry-pick <hash>
+Now the commit is moved to the desired branch...
+Not to delete the commit in master and reset it to the stage it was before doing the wrong
+commit...
+git reset --soft <hash> - Soft will reset to the point we need. But the modifications will be
+staging area...
+git reset <hash> (mixed reset bby default) - mixed will reset to the point we need. But the 
+modifications will be in the working directory and not in the staging area...
+git reset -hard <hash> - will completely delete the tracked changes and reset as it was in the last commit...
 
+
+GET RID OF UNTRACKED CHANGES:
+git clean -df   -d - untracked directories
+		-f - untracked files
+ 
 
 
 
