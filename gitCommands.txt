@@ -1,29 +1,38 @@
+CHECK WHETHER GIT IS INSTALLED CORRECTLY
 git -- version
 
+CONFIGURATION OF THE ACCOUNT
 git config --global user.name ' '
 git config --global user.email ' '
 git config --list
 
+GET HELP FROM DOCUMENTATION
 git help <verb>
 git <verb> --help
 
+INITIALISE GIT
 git init
 git status
 
+EXCEPTIONS
 .gitignore - add the files names in this file to ignore them during commit
 
+STAGING AND UNSTAGING CHANGES
 git add -A ; git add . - Add the files to the staging area ready to be committed
 git add <file name>
 
 git reset <file name>
 git reset . - Remove the files from the staging ares
 
+COMMITTING CHANGES TO REPOSITORY
 git commit -m '<Commit Comments>'
 git commit -am '<Commit Comments>'
 git log - Dsiplays the information about the last commit
 
+CLONING A REPOSITORY
 git clone <url> <where to clone> - git clone https://www.github.com/nenivaqxuhzne/HomeAutomation .
 
+GET INFORMATION ABOUT THE REPOSITORY
 git remote -v - lists the info about the remote repository
 git branch -a - lists all the branches of the repository
 
@@ -37,8 +46,9 @@ git commit -m 'Comments for the commit'
 
 
 IF THE CHANGES TO BE MADE TO THE REMOTE REPO COPY:
-
 git pull origin master - take changes to the current code base
 git push origin master make changes to the code base in remote server
 
 BRANCHING:
+git branch <name of the branch>
+git checkout <name of the branch>
