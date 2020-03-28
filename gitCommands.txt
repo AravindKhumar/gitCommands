@@ -46,9 +46,23 @@ git commit -m 'Comments for the commit'
 
 
 IF THE CHANGES TO BE MADE TO THE REMOTE REPO COPY:
-git pull origin master - take changes to the current code base
-git push origin master make changes to the code base in remote server
-
+git pull origin master/branch - take changes to the current local code base
+git push origin master/branch - make changes to the code base in remote server
+ 
 BRANCHING:
 git branch <name of the branch>
-git checkout <name of the branch>
+git checkout <name of the branch> 
+
+
+PUSH THE CHANGES IN THE BRANCH TO REMOTE REPO:
+git push -u origin <branch name>
+git branch -a - all the branches
+
+MERGE CHANGES WITH MASTER
+git branch --merged - displays what all branches have been merged recently with master
+git merge <branch name>
+
+DELETE A BRANCH AFTER MERGING WITH THE MASTER:
+git branch -d <branch name>
+git push origin --delete <branch name>
+
